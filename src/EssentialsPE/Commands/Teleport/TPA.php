@@ -31,7 +31,7 @@ class TPA extends BaseCommand{
             return false;
         }
         if(!($player = $this->getAPI()->getPlayer($args[0]))){
-            $sender->sendMessage(TextFormat::RED . "[Error] Player not found");
+            $sender->sendMessage(TextFormat::RED . "[Error] Hrac nebyl nalezen");
             return false;
         }
         if($player->getName() === $sender->getName()){
@@ -39,8 +39,8 @@ class TPA extends BaseCommand{
             return false;
         }
         $this->getAPI()->requestTPTo($sender, $player);
-        $player->sendMessage(TextFormat::AQUA . $sender->getName() . TextFormat::GREEN . " wants to teleport to you, please use:\n/tpaccept to accepts the request\n/tpdeny to decline the invitation");
-        $sender->sendMessage(TextFormat::GREEN . "Teleport request sent to " . $player->getDisplayName() . "!");
+        $player->sendMessage(TextFormat::AQUA . $sender->getName() . TextFormat::GREEN . " se chce k tobe portnout, pouzij:\n/tpyes pro prijmuti\n/tpno pro odmitnuti");
+        $sender->sendMessage(TextFormat::GREEN . "Zadost o teleport byla poslana hraci " . $player->getDisplayName() . "!");
         return true;
     }
 } 
