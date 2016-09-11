@@ -42,7 +42,7 @@ class Spawn extends BaseCommand{
             }
         }
         $player->teleport(Location::fromObject($this->getAPI()->getServer()->getDefaultLevel()->getSpawnLocation(), $this->getAPI()->getServer()->getDefaultLevel()));
-        $player->sendMessage(TextFormat::GREEN . "Teleporting...");
+        $player->sendMessage(TextFormat::YELLOW . "Teleportuju na spawn...");
         return true;
     }
 } 
