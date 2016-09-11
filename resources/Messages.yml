@@ -8,8 +8,8 @@ version: 2.0.0
 messages:
   afk:
     self:
-      enable: "&eYou're now AFK"
-      disable: "&eYou're no longer AFK"
+      enable: "&eJsi AFK"
+      disable: "&eUz nejsi AFK"
     other:
-      enable: "&e@player is now AFK"
-      disable: "&e@player is no longer AFK"
+      enable: "&e@player &r&eje ted AFK"
+      disable: "&e@player &r&euz neni AFK"
