@@ -11,5 +11,5 @@ messages:
       enable: "&eJsi AFK"
       disable: "&eUz nejsi AFK"
     other:
-      enable: "&e@player &r&eje ted AFK"
-      disable: "&e@player &r&euz neni AFK"
+      enable: "&f@player &r&eje ted AFK"
+      disable: "&f@player &r&euz neni AFK"
