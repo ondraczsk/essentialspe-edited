@@ -45,6 +45,7 @@ class Gamemode extends BaseOverrideCommand{
                     break;
                 case "spectator":
                 case "viewer":
+                case "gmspc":
                 case "gmt":
                     $args[0] = Player::SPECTATOR;
                     break;
