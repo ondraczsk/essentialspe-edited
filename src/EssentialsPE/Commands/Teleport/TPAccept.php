@@ -56,8 +56,8 @@ class TPAccept extends BaseCommand{
                 return false;
                 break;
         }
-        $player->sendMessage(TextFormat::AQUA . $sender->getDisplayName() . TextFormat::GREEN . " accepted your teleport request! Teleporting...");
-        $sender->sendMessage(TextFormat::GREEN . "Teleporting...");
+        $player->sendMessage(TextFormat::AQUA . $sender->getDisplayName() . TextFormat::GREEN . " prijmul vasi zadost, teleportuju..");
+        $sender->sendMessage(TextFormat::GREEN . "Teleportuju...");
         if($request === "tpto"){
             $player->teleport($sender);
         }else{
