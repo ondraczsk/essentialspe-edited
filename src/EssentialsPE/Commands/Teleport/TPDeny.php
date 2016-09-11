@@ -56,7 +56,7 @@ class TPDeny extends BaseCommand{
                 return false;
                 break;
         }
-        $player->sendMessage(TextFormat::AQUA . $sender->getDisplayName() . TextFormat::RED . " denied your teleport request");
+        $player->sendMessage(TextFormat::AQUA . $sender->getDisplayName() . TextFormat::RED . " neprijmul zadost o teleport");
         $sender->sendMessage(TextFormat::GREEN . "Denied " . TextFormat::AQUA . $player->getDisplayName() . (substr($player->getDisplayName(), -1, 1) === "s" ? "'" : "'s") . TextFormat::RED . " teleport request");
         $this->getAPI()->removeTPRequest($player, $sender);
         return true;
